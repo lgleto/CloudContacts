@@ -11,14 +11,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
-        <HintPath>..\..\..\Downloads\mysql-connector-net-8\net5.0\MySql.Data.dll</HintPath>
-      </Reference>
+      <Compile Remove="WeatherForecast.cs" />
+      <Compile Remove="Controllers\WeatherForecastController.cs" />
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Remove="WeatherForecast.cs" />
-      <Compile Remove="Controllers\WeatherForecastController.cs" />
+      <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+        <HintPath>..\..\..\..\..\..\Downloads\mysql-connector-net-8\net5.0\MySql.Data.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>
