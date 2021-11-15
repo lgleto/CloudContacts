@@ -126,10 +126,10 @@ namespace CloudContacts.models
             {
                 String strQuery =
                     "UPDATE users SET " +
-                    "name    = '" +client.Name     + "', '" +
-                    "address = '" +client.Address  + "', '" +
-                    "email   = '" +client.Email    + "', '" +
-                    "phone   = '" +client.Phone    + "', '" +
+                    "name    = '" +client.Name     + "', " +
+                    "address = '" +client.Address  + "', " +
+                    "email   = '" +client.Email    + "', " +
+                    "phone   = '" +client.Phone    + "' " +
                     "WHERE id ='"+id+"'";
                 
                 int value = dbc.DbNonQuery(strQuery);
